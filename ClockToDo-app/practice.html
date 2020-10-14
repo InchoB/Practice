@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>practice</title>
+
+        <style>
+            body {
+                background-color: #ecf0f1;
+                color: #34495e;
+                transition: color 0.5s ease-in-out;
+            }
+
+            .btn {
+                cursor: pointer;
+            }
+
+            .clicked {
+                color: #7f8c8d;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="title" class="btn">This works!</h1>
+
+        <script>
+            function sayHello(name, age) {
+                return `hello! ${name} is ${age} years old`;
+            }
+
+            const greetNari = sayHello('nari', 30);
+
+            console.log(greetNari);
+
+            const calculator = {
+                plus: function (a, b) {
+                    return a + b;
+                },
+                minus: function (a, b) {
+                    return a - b;
+                },
+                multiplation: function (a, b) {
+                    return a * b;
+                },
+                division: function (a, b) {
+                    return a / b;
+                },
+                power: function (a, b) {
+                    return a ** b;
+                },
+            };
+
+            const plus = calculator.plus(5, 5);
+            const minus = calculator.minus(5, 5);
+            const multiplation = calculator.multiplation(5, 5);
+            const division = calculator.division(5, 5);
+            const power = calculator.power(5, 5);
+
+            console.log(plus, minus, multiplation, division, power);
+
+            const title = document.querySelector('#title');
+
+            // const BASE_COLOR = 'rgb(52, 73, 94)';
+            // const OTHER_COLOR = '#7f8c8d';
+
+            // function handleClick() {
+            //     const currentColor = title.style.color;
+            //     if (currentColor === BASE_COLOR) {
+            //         title.style.color = OTHER_COLOR;
+            //     } else {
+            //         title.style.color = BASE_COLOR;
+            //     }
+            // }
+
+            // function init() {
+            //     title.style.color = BASE_COLOR;
+            //     title.addEventListener('click', handleClick);
+            // }
+
+            // init();
+
+            const CLICKED_CLASS = 'clicked';
+
+            function handleClick() {
+                // const hasClass = title.classList.contains(CLICKED_CLASS);
+                // if (hasClass) {
+                //     title.classList.remove(CLICKED_CLASS);
+                // } else {
+                //     title.classList.add(CLICKED_CLASS);
+                // }
+
+                title.classList.toggle(CLICKED_CLASS);
+            }
+
+            function init() {
+                title.addEventListener('click', handleClick);
+            }
+
+            init();
+        </script>
+    </body>
+</html>

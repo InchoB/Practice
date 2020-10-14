@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+        <!-- meta property -->
+        <meta property="og:title" content="To do list" />
+        <meta property="og:description" content="Check your to do list" />
+        <meta property="og:image" content="https://inchob.github.io/Practice/ClockToDo-app/img/thumbnail.jpg" />
+
+        <title>TO DO LIST</title>
+
+        <!-- CSS style -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="js-clock clock">
+            <h1 class="js-title">
+                <p>00:00</p>
+                <span class="sec">00</span>
+            </h1>
+        </div>
+
+        <form action="" class="js-form form">
+            <input type="text" placeholder="What is your name?" />
+        </form>
+
+        <h2 class="js-greetings greetings"></h2>
+
+        <div class="toDoWrap">
+            <form action="" class="js-toDoForm toDoForm">
+                <input type="text" placeholder="Write a to do" />
+            </form>
+
+            <ul class="js-toDoList toDoList"></ul>
+        </div>
+
+        <span class="js-weather weather"></span>
+
+        <!-- Javascript -->
+        <script type="text/javascript" src="clock.js"></script>
+        <script type="text/javascript" src="greeting.js"></script>
+        <script type="text/javascript" src="todo.js"></script>
+        <script type="text/javascript" src="bg.js"></script>
+        <script type="text/javascript" src="weather.js"></script>
+    </body>
+</html>

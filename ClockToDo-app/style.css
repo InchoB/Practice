@@ -1,0 +1,93 @@
+body {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    overflow: hidden;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    font-size: 25vw;
+}
+h1 p {
+    display: inline-block;
+    margin: 0;
+}
+h1 .sec {
+    font-size: 8vw;
+    border-top: 3px solid #fff;
+}
+
+.form {
+    display: none;
+}
+.showing {
+    display: block;
+}
+
+input {
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: none;
+    color: #fff;
+}
+input::placeholder {
+    color: #ccc;
+}
+
+.toDoWrap {
+    width: 300px;
+    text-align: left;
+    margin: 0 auto;
+}
+.toDoForm input {
+    width: 100%;
+    box-sizing: border-box;
+}
+.toDoList {
+    padding-left: 25px;
+}
+.toDoList li button {
+    float: right;
+    border: none;
+    background: none;
+    font-weight: bolder;
+    color: red;
+}
+
+.weather {
+    position: absolute;
+    margin: 0;
+    bottom: 10px;
+    left: 10px;
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 50vmax);
+    width: 100vmax;
+    z-index: -1;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 769px) {
+    h1 {
+        font-size: 12rem;
+    }
+    h1 .sec {
+        font-size: 3.8rem;
+    }
+}
