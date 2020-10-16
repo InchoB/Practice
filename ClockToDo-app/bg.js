@@ -1,4 +1,4 @@
-const body = document.querySelector('body');
+const body = document.querySelector('.bg-img');
 
 const IMG_NUMBER = 4;
 function paintImage(imgNumber) {
