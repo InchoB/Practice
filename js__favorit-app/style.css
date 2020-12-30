@@ -1,0 +1,227 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: #333;
+}
+li {
+	list-style: none;
+}
+body {
+	min-width: 360px;
+	max-width: 414px;
+	width: 100%;
+	height: 100vh;
+	margin: 0 auto;
+	font-family: 'Rajdhani', 'Rubik', 'Cuprum', 'Montserrat', 'Noto Sans KR', 'Ubuntu', sans-serif;
+	color: #333;
+	padding: 3%;
+	font-size: 16px;
+	/* border: 1px solid #ddd; */
+	background: linear-gradient(180deg, #4d8674 200px, #fafafa 200px);
+}
+h1 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 10px;
+	color: #fff;
+}
+
+.inputList {
+	display: flex;
+	width: 100%;
+	margin: 20px 0;
+	padding: 0 5px;
+}
+
+input {
+	font-family: 'Rajdhani', 'Rubik', 'Cuprum', 'Montserrat', 'Noto Sans KR', 'Ubuntu', sans-serif;
+	padding: 5px 10px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	margin-right: 2%;
+	-webkit-appearance: none;
+}
+input::placeholder {
+	color: #bbb;
+	text-align: left;
+}
+.inputName {
+	max-width: 100px;
+	width: 100px;
+}
+.inputAddress {
+	max-width: 250px;
+	width: calc(100% - 100px);
+}
+
+.btn {
+	border: none;
+	background: #333;
+	color: #fff;
+	font-weight: bolder;
+	padding: 10px 20px;
+	border-radius: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+}
+.btn1 {
+	display: none;
+}
+.btn2 {
+	display: block;
+	min-width: 35px;
+	min-height: 35px;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	padding: 0;
+	border-radius: 50%;
+	font-size: 2rem;
+	background: center / auto url(img/add24W.png) no-repeat #333;
+}
+
+.bookmarkWrap {
+	min-width: 340px;
+	max-width: 380px;
+	width: 100%;
+	min-height: 200px;
+	margin: 10% auto 3%;
+	/* border: 1px solid #333; */
+	/* background: #fff; */
+	border-radius: 10px;
+}
+
+.bookmarkList {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.bookmark {
+	position: relative;
+	width: calc(100% / 3 - 10.5px);
+	height: auto;
+	margin: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background: #fff;
+	border-radius: 10px;
+	padding: 0 0 15px;
+	/* border: 1px solid #ddd; */
+}
+
+.bAddress {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 0 10px;
+}
+
+.bImg {
+	width: 32px;
+	height: 32px;
+}
+
+.bName {
+	position: relative;
+	font-weight: 600;
+	margin-top: 5px;
+	padding: 0 10px;
+}
+
+.bName input {
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	border: unset;
+	/* border-bottom: 1px solid #ddd; */
+	border-radius: 0;
+	text-align: center;
+	font-weight: 600;
+}
+
+.modify {
+	position: absolute;
+	top: calc(50% - 50%);
+	left: calc(50% - 50%);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	line-height: 2;
+	background: #a6c2b9;
+	border-radius: 10px;
+}
+.modifyTitle {
+	width: 100%;
+	height: 33%;
+	font-weight: bolder;
+	color: #fff;
+	line-height: 3;
+}
+.modifyList {
+	width: 100%;
+	height: 66%;
+	/* border: 1px solid #000; */
+	border-radius: 0 0 10px 10px;
+}
+.modify li {
+	width: 90%;
+	height: 40%;
+	line-height: 2;
+	margin: 5% auto;
+	font-weight: 500;
+	border-radius: 10px;
+	background: #fff;
+}
+.modiName {
+	/* border-bottom: 1px solid #000; */
+}
+
+.delBtn,
+.modBtn,
+.savBtn,
+.cloBtn {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 24px;
+	height: 24px;
+	background: none;
+	border: unset;
+	margin: 0;
+}
+.delBtn {
+	background: center / auto url(img/close24.png) no-repeat;
+}
+.savBtn {
+	position: absolute;
+	top: unset;
+	bottom: 20px;
+	right: 10px;
+	background: center / auto url(img/check24.png) no-repeat;
+}
+.cloBtn {
+	background: center / auto url(img/close24W.png) no-repeat;
+}
+
+/* @media screen and (min-width: 400px) {
+	.btn1 {
+		display: block;
+	}
+	.btn2 {
+		display: none;
+	}
+} */
